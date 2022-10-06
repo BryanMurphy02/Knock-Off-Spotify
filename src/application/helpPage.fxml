@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.helpPageController">
+   <children>
+      <Label layoutX="76.0" layoutY="14.0" prefHeight="26.0" prefWidth="448.0" text="How to use Knock Off Spotify">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="75.0" text="Home Tab:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="101.0" prefHeight="20.0" prefWidth="370.0" text="Displays all the available songs">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="121.0" prefHeight="20.0" prefWidth="484.0" text="Add to liked songs by selecting a song and clicking the like button">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="141.0" prefHeight="20.0" prefWidth="492.0" text="Add song to playlist by selecting a song and clicking add to playlist">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#homeButtonClicked" text="Home" />
+      <Label layoutX="35.0" layoutY="190.0" text="Liked Songs Tab:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="217.0" prefHeight="20.0" prefWidth="448.0" text="404 Page not found appears until you add to your liked songs">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="237.0" prefHeight="20.0" prefWidth="504.0" text="Once songs are added, they will appear in a table like in the home tab">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="257.0" prefHeight="20.0" prefWidth="492.0" text="Add song to playlist by selecting a song and clicking add to playlist">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="298.0" text="Playlists:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="318.0" prefHeight="20.0" prefWidth="448.0" text="404 Page not found appears until you add a song to a playlist">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="338.0" prefHeight="20.0" prefWidth="465.0" text="Add to a playlist by selecting a song, hitting the playlist button,">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="358.0" prefHeight="20.0" prefWidth="484.0" text="typing in a playlist name, and then select which playlist to add to">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <tabs>
+      <Tab fx:id="homeTab" text="Home">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="399.0" prefWidth="600.0">
+               <children>
+                  <TableView fx:id="libraryTable" layoutX="58.0" layoutY="37.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="questionmark" fitHeight="24.0" fitWidth="33.0" layoutX="8.0" layoutY="14.0" onMouseClicked="#questionmarkClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/questionMark.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="likeButton" fitHeight="31.0" fitWidth="42.0" layoutX="542.0" layoutY="156.0" onMouseClicked="#likeButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/facebookLikeButton.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="addToPlaylist" fitHeight="45.0" fitWidth="41.0" layoutX="551.0" layoutY="205.0" onMouseClicked="#addToPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/addToPlaylist.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="addToPlaylistLabel" layoutX="181.0" layoutY="16.0" text="Add to a playlist" visible="false">
+                     <font>
+                        <Font name="Times New Roman" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="playlistOneButton" layoutX="13.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#playlistOneButtonClicked" prefHeight="40.0" prefWidth="77.0" text="Playlist 1" visible="false" />
+                  <Button fx:id="playlistTwoButton" layoutX="180.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#playlistTwoButtonClicked" prefHeight="40.0" prefWidth="77.0" text="Playlist 2" visible="false" />
+                  <Button fx:id="playlistThreeButton" layoutX="342.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#playlistThreeButtonClicked" prefHeight="40.0" prefWidth="77.0" text="Playlist 3" visible="false" />
+                  <Button fx:id="playlistFourButton" layoutX="512.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#playlistFourButtonClicked" prefHeight="40.0" prefWidth="77.0" text="Playlist 4" visible="false" />
+                  <Label fx:id="namePlaylistLabel" layoutX="136.0" layoutY="103.0" text="Name your playlist(press enter when done)" visible="false">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="returnArrow" fitHeight="20.0" fitWidth="42.0" layoutX="146.0" layoutY="26.0" onMouseClicked="#returnArrowClicked" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/return%20arrow.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="createName" layoutX="192.0" layoutY="140.0" onAction="#getPlaylistName" prefHeight="31.0" prefWidth="217.0" visible="false" />
+                  <Button fx:id="tempPlayButton" layoutX="546.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#tempPlayButtonClicked" text="Play" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+    <Tab fx:id="likedSongsTab" text="Liked Songs">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="likedSongsTable" layoutX="59.0" layoutY="34.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn1" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn1" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn1" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="defualtLikedSongs" fitHeight="591.0" fitWidth="779.0" layoutX="-89.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/404.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="likeButton2" fitHeight="38.0" fitWidth="43.0" layoutX="551.0" layoutY="203.0" onMouseClicked="#likeButton2Clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/addToPlaylist.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="likedSongsTrashcan" fitHeight="32.0" fitWidth="29.0" layoutX="556.0" layoutY="170.0" onMouseClicked="#deleteFromLikedSongs" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/trashCan.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="playlistOne" text="Playlist 1">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="playlistOneTable" layoutX="59.0" layoutY="34.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn2" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn2" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn2" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="defualtPlaylistOne" fitHeight="591.0" fitWidth="779.0" layoutX="-89.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/404.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="trashCan" fitHeight="32.0" fitWidth="29.0" layoutX="558.0" layoutY="169.0" onMouseClicked="#deleteFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/trashCan.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="playlistTwo" text="Playlist 2">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="playlistTwoTable" layoutX="59.0" layoutY="34.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn3" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn3" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn3" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="defualtPlaylistTwo" fitHeight="591.0" fitWidth="779.0" layoutX="-89.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/404.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="trashCan" fitHeight="32.0" fitWidth="29.0" layoutX="558.0" layoutY="170.0" onMouseClicked="#deleteFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/trashCan.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="playlistThree" text="Playlist 3">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="playlistThreeTable" layoutX="59.0" layoutY="34.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn4" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn4" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn4" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="defualtPlaylistThree" fitHeight="591.0" fitWidth="779.0" layoutX="-89.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/404.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="trashCan" fitHeight="32.0" fitWidth="29.0" layoutX="558.0" layoutY="170.0" onMouseClicked="#deleteFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/trashCan.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="playlistFour" text="Playlist 4">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="playlistFourTable" layoutX="58.0" layoutY="34.0" onMouseClicked="#getSong" prefHeight="337.0" prefWidth="484.0">
+                     <columns>
+                        <TableColumn fx:id="songColumn5" prefWidth="149.0" text="Song" />
+                        <TableColumn fx:id="artistColumn5" minWidth="4.0" prefWidth="167.0" text="Artist" />
+                        <TableColumn fx:id="albumColumn5" prefWidth="167.0" text="Album" />
+                     </columns>
+                  </TableView>
+                  <ImageView fx:id="defualtPlaylistFour" fitHeight="591.0" fitWidth="779.0" layoutX="-89.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../../images/404.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="trashCan" fitHeight="32.0" fitWidth="29.0" layoutX="558.0" layoutY="169.0" onMouseClicked="#deleteFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/trashCan.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab fx:id="testingTab" text="Testing">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="playButton" layoutX="238.0" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#playButtonClicked" prefHeight="72.0" prefWidth="125.0" text="Play" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

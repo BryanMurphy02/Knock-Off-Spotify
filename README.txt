@@ -1,3 +1,6 @@
+Please note this is not a fully finished product and there is still more to be done. 
+
+
 Needed to be installed: JavaFX javafx-sdk-11.0.2
 
 Put JavaFX in a secure folder where it can be reached but not easily deleted

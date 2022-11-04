@@ -3,6 +3,10 @@
 ## Description
 This JavaFX application uses a simple GUI and strives to emulate the spotify experience. The user can select from the library of songs and add to their liked songs and even make playlists. 
 #
+## Project Takeaways
+- GUI creation
+- Data Structures
+- Project planning
 ## Running Knock Off Spotify
 The following are needed to run the program:
 - JavaFX javafx-sdk-11.0.2

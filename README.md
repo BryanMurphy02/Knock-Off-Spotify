@@ -7,6 +7,7 @@ This JavaFX application uses a simple GUI and strives to emulate the spotify exp
 - GUI creation
 - Data Structures
 - Project planning
+#
 ## Running Knock Off Spotify
 The following are needed to run the program:
 - JavaFX javafx-sdk-11.0.2

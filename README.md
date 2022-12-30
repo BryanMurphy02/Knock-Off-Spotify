@@ -10,10 +10,10 @@ Please also keep in mind there are many things that need to be fixed and imporov
 - Project planning
 #
 ## Running Knock Off Spotify
-The following are needed to run the program:
+Below are the libraries needed:
 - JavaFX javafx-sdk-11.0.2
 
-Setting up the JavaFX library:
+The following steps are to run this program in Eclipse IDE:
 1. Put JavaFX in a secure folder where it can be reached but not easily deleted
 2. Open a new text document to copy and paste things into
 3. Copy the path to JavaFX\lib:

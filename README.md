@@ -4,11 +4,18 @@
 This JavaFX application uses a simple GUI and strives to emulate the spotify experience. The user can select from the library of songs and add to their liked songs and even make playlists. 
 Please also keep in mind there are many things that need to be fixed and imporoved upon!
 #
-## Project Takeaways
-- GUI creation
-- Data Structures
-- Project planning
+## Usage
+- Play, pause, and skip songs
+- Like songs
+- Create playlists
 #
+## Algorithms and Data Structures
+- Array Lists
+- Queues
+- Binary search
+- Bubble sort
+#
+
 ## Installation
 Below are the libraries needed:
 - JavaFX javafx-sdk-11.0.2

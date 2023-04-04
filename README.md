@@ -9,7 +9,7 @@ Please also keep in mind there are many things that need to be fixed and imporov
 - Data Structures
 - Project planning
 #
-## Running Knock Off Spotify
+## Installation
 Below are the libraries needed:
 - JavaFX javafx-sdk-11.0.2
 

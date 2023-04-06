@@ -34,6 +34,7 @@ Here are the steps to insall JavaFX:
 ```bash
 --module-path "JavaFX Path\lib" 
 --add-modules javafx.controls,javafx.fxml,javafx.media
+```
 4. Open Eclipse and right-click on the project in the Package Explorer, then select "Properties" at the bottom.
 5. In the left-hand panel, select "Java Build Path."
 6. At the top of the window, select the "Libraries" tab.
